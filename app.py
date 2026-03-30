@@ -1,31 +1,29 @@
 import streamlit as st
 
-# ============================================================
-# 1. GLOBAL SETUP (MUST BE FIRST)
-# ============================================================
+
+# 1. Global Setup
 st.set_page_config(
     page_title="KKBOX Retention Intelligence System",
     page_icon="🎧",
     layout="wide"
 )
 
-# ============================================================
-# 2. SIDEBAR NAVIGATION
-# ============================================================
 
-# --- TITLE ---
+# 2. Sidebar Navigation
+
+# Title And Branding
 st.sidebar.markdown(
     "<h2 style='color:white; margin-bottom:10px;'>🎧 KKBOX Retention OS</h2>",
     unsafe_allow_html=True
 )
 
-# --- NAV LABEL ---
+# Navigation Label 
 st.sidebar.markdown(
     "<p style='color:white; font-size:14px; font-weight:600;'>Navigate</p>",
     unsafe_allow_html=True
 )
 
-# --- MENU ---
+# Menu Options
 page = st.sidebar.radio(
     "",
     [
@@ -39,9 +37,7 @@ page = st.sidebar.radio(
     ]
 )
 
-# ============================================================
-# 3. PAGE ROUTER
-# ============================================================
+# 3. Page Router
 if page == "⌂ Home":
     import pages.home as home
     home.render()
