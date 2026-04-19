@@ -91,6 +91,7 @@ Actionable retention strategies based on:
 
 ## 📁 Project Structure
 
+```text
 customer-churn-intelligence-system/
 ├── streamlit_app.py                # Main router
 ├── utils.py                        # Scoring + model loading
@@ -110,10 +111,11 @@ customer-churn-intelligence-system/
 │   └── final_churn_model.pkl
 │
 ├── data/
-│   └── processed/df_clean.csv
+│   └── processed/
+│       └── df_clean.csv
 │
 └── README.md
-
+```
 ---
 
 ## ▶️ How to Run
