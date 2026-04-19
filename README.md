@@ -90,6 +90,7 @@ Actionable retention strategies based on:
 ---
 
 ## 📁 Project Structure
+
 customer-churn-intelligence-system/
 ├── streamlit_app.py                # Main router
 ├── utils.py                        # Scoring + model loading
