@@ -91,6 +91,30 @@ Actionable retention strategies based on:
 
 ## 📁 Project Structure
 
+customer-churn-intelligence-system/
+│
+├── streamlit_app.py                # Main router
+├── utils.py                        # Scoring + model loading
+├── pdf_report.py                   # Executive PDF generator
+│
+├── app_pages/                      # All Streamlit pages
+│   ├── home.py
+│   ├── churn.py
+│   ├── business.py
+│   ├── strategy.py
+│   ├── analytics.py
+│   ├── shap_explain.py
+│   ├── batch_scoring.py
+│   └── prospective.py
+│
+├── model/
+│   └── final_churn_model.pkl
+│
+├── data/
+│   └── processed/df_clean.csv
+│
+└── README.md
+
 ---
 
 ## ▶️ How to Run
